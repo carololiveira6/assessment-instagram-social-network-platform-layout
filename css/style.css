@@ -1,0 +1,311 @@
+/*
+Theme Name: Instagram
+Author: Kenzie Academy
+Author URI: kenzie.com.br;
+Version: 1.0
+ 
+--------------------------------------------
+SUGESTÃO DE ESTRUTURAÇÃO BASE 
+--------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** BODY
+**** TOPO
+**** RODAPÉ
+**** PÁGINA INICIAL
+*/
+
+/*BODY*/
+body {
+	display: flex;
+	flex-direction: column;
+	max-width: 935px;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #262626;
+}
+
+/*TOPO*/
+
+/*RODAPÉ*/
+footer {
+    display: flex;
+	flex-direction: column;
+}
+
+footer nav.footer-nav {
+	display: flex;
+}
+
+	nav.footer-nav a {
+		text-decoration: none;
+		margin-right: 12px;
+		color: darkblue;
+		font-size: 12px;
+		text-transform: uppercase;
+		margin-top: 17px;
+	}
+
+	nav.footer-nav div {
+		text-transform: uppercase;
+		font-size: 12px;
+		opacity: 0.7;
+	}
+
+/*PÁGINA INICIAL*/
+main {
+	display: flex;
+	flex-direction: column;
+	max-width: 935px;
+	background-color: #f5f5f559;
+}
+	main .profile-content {
+		display: flex;
+		margin-top: 30px;
+	}
+
+	main section.profile-photo {
+		border-radius: 30px;
+		display: flex;
+		margin: 10px 35px;
+	}
+
+	main section.profile-photo figure {
+		margin: 0px;
+		height: 251px;
+		width: 252px;
+	}
+
+	main section.profile-photo img {
+		border-radius: 132px;
+		width: 200px;
+	}
+
+	main section.profile-info h1 {
+		font-size: 35px;
+		font-weight: 300;
+		margin-top: 10px;
+		margin-bottom: 3px;
+
+	}
+
+	main section.profile-info div {
+		display: flex;
+		font-size: 21px;
+	}
+
+		main div.profile-data p {
+			margin-right: 30px;
+		}
+
+		main div.profile-data span {
+			font-weight: bolder;
+		}
+	
+	main section.profile-info h2 {
+		font-weight: 700;
+		font-size: 21px;
+		margin-bottom: 5px;
+	}
+
+	main section.profile-info ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		letter-spacing: 0.5px;
+		width: 480px;
+	}
+
+	main section.profile-info ul p {
+		margin: 0;
+		font-size: 17px;
+	}
+
+	main section.profile-info ul a {
+		font-size: 18px;
+		text-decoration: none;
+	}
+
+	main .highlighted-stories img {
+		width: 77px;
+		border-radius: 100%;
+		margin-bottom: 12px;
+	}
+
+	main .highlighted-stories ul {
+		list-style-type: none;
+		display: flex;
+		padding-left: 65px;
+	}
+
+	main .highlighted-stories ul figure {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-weight: bolder;
+		text-align: center;
+		margin: 20px;
+	}
+
+	main .highlighted-stories ul figcaption {
+		font-size: 15px;
+	}
+
+	main .profile-posts {
+		display: flex;
+		flex-direction: column;		
+	}
+
+	main .profile-posts hr {
+		width: 73vw;
+		opacity: 0.3;
+		margin-bottom: 33px;
+	}
+
+	main .profile-posts nav {
+		display: flex;
+		margin: 0 auto;
+	}
+
+	main .profile-posts nav a {
+		margin: 0 35px;
+		text-decoration: none;
+		color: #808080ad;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	main .profile-posts ul {
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	main .profile-posts img {
+		width: 293px;
+		height: 293px;
+	}
+
+@media only screen and (max-width: 500px) {
+
+	nav.footer-nav a {
+		font-size: 8px;
+		margin: 0 auto;
+	}
+
+	div.copyright {
+		font-size: 10px;
+    	text-align: center;
+	}
+	
+	main {
+		
+	}
+		main .profile-content {
+			flex-direction: column;
+			margin: 0px;
+		}
+	
+		main section.profile-photo {
+			margin: 0 auto;
+		}
+	
+		main section.profile-photo figure {
+			height: 165px;
+			width: 165px;
+		}
+	
+		main section.profile-photo img {
+			width: 150px;
+		}
+
+		main section.profile-info {
+			margin: 0 auto;
+		}
+	
+		main section.profile-info h1 {
+			font-size: 30px;
+		}
+	
+		main section.profile-info div {
+			font-size: 15px;
+		}
+
+		main section.profile-info h2 {
+			font-size: 20px;
+		}
+	
+		main section.profile-info ul {
+			width: 385px;
+		}
+}
+
+@media only screen and (min-width: 600px) {
+
+	nav.footer-nav a {
+		font-size: 10px;
+		margin: 0 auto;
+	}
+
+	div.copyright {
+		text-align: center;
+		font-size: 12px;
+	}
+	
+	main {
+	}
+		main .profile-content {
+			justify-content: space-around;
+		}
+	
+		main section.profile-photo figure {
+			width: 155px;
+		}
+	
+		main section.profile-photo img {
+			width: 150px;
+		}
+	
+		main section.profile-info div {
+			font-size: 16px;
+		}
+	
+		main section.profile-info ul {
+			width: 420px;
+		}
+
+		main .profile-posts ul {
+			justify-content: space-evenly;
+		}
+
+		main .profile-posts figure {
+			margin: 0px;
+		}
+	
+		main .profile-posts img {
+			width: 230px;
+			height: 230px;
+		}
+}
+
+@media only screen and (min-width: 1000px) {
+
+	body {
+		margin: 0 auto;
+	}
+
+	main .profile-content {
+		justify-content: space-around;
+	}
+}
+
+@media only screen and (min-width: 2000px) {
+
+	body {
+		margin: 0 auto;
+	}
+
+	main .profile-content {
+		justify-content: space-around;
+	}
+}
